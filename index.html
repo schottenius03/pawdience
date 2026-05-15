@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawdience</title>
+    <link rel="icon" href="images/vet.png">
+</head>
+<body>
+    <div id="grid">
+        <nav class="nav">
+            <section class="company">
+                <img class="logo" src="images/vet.png" alt="cross with paw logo">
+                <ul>
+                    <li class="links" id="logo-txt"><a href="index.html">Pawdience</a></li>
+                </ul>
+            </section>
+            <ul class="link">
+                <li class="links" id="pages"><a class= site href="html/login.html">Login</a></li>
+                <li class="links" id="pages"><a class= site href="html/service.html">Service</a></li>
+                <li class="links" id="pages"><a class= site href="html/contact.html">Contact</a></lI>
+                <li class="links" id="pages"><a class= site href="html/about.html">About</a></li>
+                <li class="links" id="pages"><a class= site href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        
+        <section id="slideshow">
+            <div>
+            <img class="gallery" src="../images/puppy.jpg" id="puppy" alt="puppy pictures">
+            </div>
+            <script type="text/javascript">
+                var pics = ["images/puppy.jpg", "images/copycat.jpg", "images/dog.jpg", "images/beachday.jpg"];
+                var i = 1;
+                function byt() {
+                    document.getElementById("puppy").src = pics[i%4];
+                    i++;
+                    }
+                var slideshow = setInterval(byt, 5000)
+            </script>
+	    </section>
+        
+        <section id="text">
+            <h1>Something for your fur friend</h1>
+            <p>Are you looking for a place to collect all your information of your 4 paw best friend?<br><br>
+                Do you wanna keep everything in the same place?<br><br>
+                While also being able to develop and get even closer to your pet?<br><br>
+                Then you have come to the right place<br><br>
+                This will give both of you the opportunity to develop an even deeper relationship<br><br>
+                By keeping all the records in one place<br><br>
+                And also offering exercises and acitivtes<br><br>
+                This is the perfect place<br><br>
+                <p>No stress, no mess!<br><br>
+            </p>
+        </section>
+        <footer>
+            <p>Any questions click <a class="conref" href="html/contact.html">here</a></p>
+            &copy; Kailing 2023 All rights reserved
+        </footer>
+    </div>
+</body>
+</html>
+
